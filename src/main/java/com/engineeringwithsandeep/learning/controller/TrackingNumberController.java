@@ -1,9 +1,7 @@
-package com.getrosoft.trackingnumberservice.controller;
+package com.engineeringwithsandeep.learning.controller;
 
-import com.getrosoft.trackingnumberservice.service.TrackingNumberGeneratorService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.engineeringwithsandeep.learning.service.TrackingNumberGeneratorService;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/tracking")
