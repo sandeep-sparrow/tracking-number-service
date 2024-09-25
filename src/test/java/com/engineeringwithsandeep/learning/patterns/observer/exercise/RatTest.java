@@ -1,5 +1,7 @@
 package com.engineeringwithsandeep.learning.patterns.observer.exercise;
 
+import com.engineeringwithsandeep.learning.youtube.patterns.observer.exercise.Game;
+import com.engineeringwithsandeep.learning.youtube.patterns.observer.exercise.Rat;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
