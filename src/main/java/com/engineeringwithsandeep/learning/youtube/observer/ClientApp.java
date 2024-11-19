@@ -8,8 +8,8 @@ public class ClientApp implements Observer {
     public ClientApp() {
         Person person = new Person("max", 15);
         person.subscribe(this);
-        person.subscribe(new EmailSendingObserver(person));
-        for (int i = 0; i < 10; i++) {
+        EmailSendingObserver emailSendingObserver = new EmailSendingObserver(person);
+        for (int i = 0; i < 3; i++) {
             person.setAge(person.getAge() + 1);
         }
     }
@@ -26,6 +26,7 @@ class EmailSendingObserver implements Observer {
 
     public EmailSendingObserver(Person person) {
         this.person = person;
+        person.subscribe(this);
     }
 
     @Override

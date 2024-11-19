@@ -50,5 +50,7 @@ public class Sorts {
         System.out.println(Arrays.toString(myArray));
         insertionSort(myArray);
         System.out.println(Arrays.toString(myArray));
+        selectionSort(myArray);
+        System.out.println(Arrays.toString(myArray));
     }
 }
