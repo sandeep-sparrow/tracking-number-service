@@ -23,6 +23,7 @@ public class MergeSort {
 
         return merge(left, right);
     }
+
     public static int[] merge(int[] a, int[] b) {
         int[] result = new int[a.length + b.length];
         int i = 0, j = 0;
